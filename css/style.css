@@ -1,0 +1,691 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+input
+{
+	text-indent: 18px;
+}
+
+.customizeButton
+{
+    border: 7.5px solid;
+    border-radius: 30%/100%;
+    border-color: #ffffff;
+    background-color: #d4f6d3;
+    text-indent: 0;
+}
+
+.customizeButton:hover
+{
+    cursor: pointer;
+}
+
+.customizeInput
+{
+    font-size: 100%;
+    font-family: monospace;
+    border-radius: 20%/100%;
+    border: none;
+}
+
+/*Login*/
+
+.loginContainer
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 380px 1fr;
+    grid-template-areas: "nothing main moreNothing";
+    background-color: #cce6ff;
+}
+
+.loginBody
+{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#logo img
+{
+    width: 70%;
+    padding-left: 14%;
+}
+
+#loginsContainer
+{
+    padding: 5% 5% 0% 5%;
+    height: 90%;
+}
+
+#loginsContainer input[type='text']
+{
+    width: 100%;
+    height: 10%
+}
+
+#loginsContainer input[type='password']
+{
+    width: 100%;
+    height: 10%;
+}
+
+#loginsContainer input[type='submit']
+{
+    width: 50%;
+    margin-left: 20%;
+}
+
+#loginsContainer input[type='button']
+{
+    width: 50%;
+    margin-left: 20%;
+}
+
+#loginsContainer a
+{
+    margin-left: 22.5%;
+    color: black;
+}
+
+.error
+{
+    color: red;
+}
+
+/*Signup Page*/
+
+.signupContainer
+{
+    height: 100%;
+    background-color: #cce6ff;
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-areas: "nothing main moreNothing";
+}
+
+#signupContainer
+{
+    grid-area: main;
+    width: 100%;
+}
+
+#signupContainer input[type='text']
+{
+    width: 100%;
+    height: 5%
+}
+
+#signupContainer input[type='password']
+{
+    width: 100%;
+    height: 5%;
+}
+
+#signupContainer input[type='submit']
+{
+    width: 50%;
+    margin-left: 20%;
+}
+
+#signupContainer input[type='button']
+{
+    width: 50%;
+    margin-left: 20%;
+}
+
+/*Home Page*/
+.signupContainer
+{
+    height: 100%;
+    background-color: #cce6ff;
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-areas: "nothing main moreNothing";
+}
+
+#signupContainer
+{
+    grid-area: main;
+    width: 100%;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12% 88%;
+    background-color: #cce6ff;
+}
+
+#userGroupContainer
+{
+    display: none;
+}
+
+#userGroupContainer p 
+{
+    font-family: monospace;
+    text-align: center;
+    font-size: 150%;
+    color: gray;
+}
+
+#header
+{
+    display: grid;
+    grid-template-columns: 1fr 106.7px 1fr; 
+    grid-template-areas: "nothing image moreNothing";
+    background-color: #e6f3ff;
+}
+
+#header a
+{
+    grid-area: image;
+}
+
+#header img
+{
+    height: 90%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#bodyContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 371.59px 1fr;
+    grid-template-areas: "nothing mainBody moreNothing";
+}
+
+#body
+{
+    grid-area: mainBody;
+    display: grid;
+    grid-template-rows: 5% 1.9% 90%;
+}
+
+#bubbleContainer
+{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-areas: "nothing bubbles moreNothing";
+}
+
+#innerBubbleContainer
+{
+    grid-area: bubbles;
+    height: 100%;
+    width: 86.55px;
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-areas: "bubble1 nothing bubble2";
+}
+
+#bubble1
+{
+    grid-area: bubble1;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    width: 26.83px;
+    height: 26.83px;
+    background-color: #fff;
+}
+
+#bubble2
+{
+    grid-area: bubble2;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    width: 26.83px;
+    height: 26.83px;
+}
+
+#mainButtonContainer
+{
+    display: grid;
+}
+
+#mainButtonContainer button
+{
+    width: 371.59px;
+}
+
+#logoutForm button
+{
+    height: 100%;
+}
+
+#userGroupContainer
+{
+    overflow-y: scroll;
+}
+
+.group
+{
+    list-style: none;
+    display: grid;
+    width: 99%;
+    height: 24%;
+    grid-template-columns: 80% 20%;
+    border: solid;
+}
+
+.group li
+{
+    float: left;
+    margin-left: 13px;
+}
+
+#memberContainer
+{
+    display: grid;
+    overflow-y: scroll;
+}
+
+.groupMember
+{
+    height: 20%;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    list-style: none;
+}
+
+.groupMember img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/*Create Group*/
+.cgContainer
+{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 300px 1fr;
+    background-color: #cce6ff;
+}
+
+#cgForm
+{
+    display: grid;
+}
+
+#map
+{
+    display: none;
+    height: 300px;
+}
+
+input[type="date"]
+{
+    text-indent: 8px;
+    height: 55%;
+}
+
+input[type="time"]
+{
+    text-indent: 8px;
+    height: 55%;
+}
+
+/*Join Group Page*/
+
+.jgContainer
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%; 
+}
+
+#jgFooter
+{
+    display: grid;
+    grid-template-columns: 1fr 290px 1fr;
+    grid-template-areas: "nothing jgButton moreNothing";
+    background-color: #e6f3ff;
+}
+
+#jgHeader
+{
+    background-color: #e6f3ff;
+    display: grid;
+    grid-template-columns: 1fr 50px 304px 1fr;
+    grid-template-areas: "nothing searchIcon searchInput moreNothing";
+}
+
+#jgHeader img
+{
+    grid-area: searchIcon;
+    margin-top: 10%;
+    height: 70%;
+}
+
+#jgHeader input
+{
+    grid-area: searchInput;
+    height: 70%;
+    margin-top: 1.3%;
+}
+
+.jgButton
+{
+    grid-area: jgButton;
+    height: 90%;
+    margin-top: 1%;
+}
+
+#jgBody
+{
+    display: grid;
+    grid-template-columns: 1fr 354px 1fr;
+    background-color: #cce6ff;
+}
+
+.jgroup
+{
+    list-style: none;
+    width: 100%;
+    height: 24%;
+    border: solid;
+    background-color: #cce6ff;
+}
+
+#searchResults p
+{
+    font-family: monospace;
+    text-align: center;
+    font-size: 150%;
+    color: gray;
+}
+
+/*Profile Page*/
+
+#profileModalContainer
+{
+    display: none;
+}
+
+#pContainerContainer
+{
+    display: grid;
+    height: 90%;
+    grid-template-columns: 1fr 326px 1fr;
+    grid-template-areas: ad1 main ad2;
+    background-color: #cce6ff;
+    overflow-y: scroll;
+}
+
+.pContainer
+{
+    display: grid;
+    grid-template-rows: 50% 50%; /*55 50 when picButtonPressed*/
+    overflow-y: scroll;
+}
+
+#profilePicContainer img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.profilePicForm
+{
+    display: none;
+    width: 50%;
+}
+
+.pCancel
+{
+    display: none;
+}
+
+.pForm
+{
+    display: none;
+    grid-template-rows: 50%;
+}
+
+.pForm input[type='text']
+{
+    width: 80%;
+}
+
+/*.profileInfoClass
+{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}*/
+
+.greatDeleteButton
+{
+    background-color: #d46c6c;
+    height: 15%;
+}
+
+#profileModalContainer
+{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    grid-template-columns: 1fr 326px 1fr;
+    grid-template-rows: 33.3%;
+    grid-template-areas: "nothing noneStill nada"
+                         "nope modal moreNothing"
+                         "else moreElse elseStill";
+}
+
+#deleteModal
+{
+    grid-area: modal;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+#messageContainer
+{
+    background-color: #cce6ff;
+}
+
+#buttonContainer
+{
+    background-color: #e6f3ff;
+}
+
+#pFooter
+{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 291px 1fr;
+    grid-template-areas: "nothing bButton moreNothing";
+    background-color: #e6f3ff;
+}
+
+.pBackButton
+{
+    margin-top: 2%;
+    height: 80%;
+    grid-area: bButton;
+}
+
+#changeProfile
+{
+    float: right;
+}
+
+.notLabel
+{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "form button";
+}
+
+.chngeButtonContainer
+{
+    grid-area: button;
+    display: grid;
+}
+
+/*Feedback Page*/
+.feedbackContainer
+{
+    height: 100%;
+    background-color: #cce6ff;
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-areas: "nothing main moreNothing";
+}
+
+.innerContainer
+{
+    grid-area: main;
+}
+
+#feedback
+{
+    margin-top: 7%;
+    width: 100%;
+    height: 50%;
+}
+
+.fbButton
+{
+    width: 50%;
+    margin-left: 20%;
+}
+
+/*Forgot Password*/
+#forgotPasswordContainer
+{
+    height: 100%;
+    background-color: #cce6ff;
+    text-align: center;
+    font-family: monospace;
+}
+
+#forgotPasswordContainer form
+{
+    padding-top: 15%;
+}
+
+#forgotPasswordContainer input
+{
+    width: 70%;
+    height: 5%;
+}
+
+@media only screen and (max-width: 325px)
+{
+    .loginContainer
+    {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 290px 1fr;
+        grid-template-areas: "nothing main moreNothing";
+        background-color: #cce6ff;
+    }
+
+    #forgotPasswordContainer form
+    {
+        padding-top: 35%;
+    }
+
+    .jgContainer
+    {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 10% 90% 10%; 
+    }
+
+    .jgroup
+    {
+        list-style: none;
+        width: 98%;
+        height: 28%;
+        border: solid;
+        background-color: #cce6ff;
+    }
+    
+    .feedbackContainer
+    {
+        height: 100%;
+        background-color: #cce6ff;
+        display: grid;
+        grid-template-columns: 1fr 290px 1fr;
+        grid-template-areas: "nothing main moreNothing";
+        margin: 0;
+    }
+    
+    #bodyContainer
+    {
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr;
+        grid-template-areas: "nothing mainBody moreNothing";
+    }
+
+    #mainButtonContainer button
+    {
+        width: 100%;
+    }
+    
+     #bubbleContainer
+    {
+        display: grid;
+        grid-template-columns: 1fr 86.55px 1fr;
+        grid-template-areas: "nothing bubbles moreNothing";
+    }
+
+    #innerBubbleContainer
+    {
+        grid-area: bubbles;
+        height: 100%;
+        width: 86.55px;
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        grid-template-areas: "bubble1 nothing bubble2";
+    }
+
+    .group
+    {
+        list-style: none;
+        display: grid;
+        width: 99%;
+        height: 29%;
+        grid-template-columns: 80% 20%;
+        border: solid;
+    }
+    
+    #profilePicContainer img
+    {
+        max-height: 80%;
+        max-width: 100%;
+    }
+    
+    .feedbackContainer
+    {
+        height: 100%;
+        background-color: #cce6ff;
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr;
+        grid-template-areas: "nothing main moreNothing";
+    }
+}

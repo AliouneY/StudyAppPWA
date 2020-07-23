@@ -1,0 +1,538 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+input
+{
+	text-indent: 18px;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    background-color: #cce6ff;
+    font-size: 300%;
+    font-family: monospace;
+    margin: 0;
+}
+
+.error
+{
+    position: absolute;
+    color: red;
+}
+
+.customizeButton
+{
+    width: 50%;
+    height:15%;
+    border: 7.5px solid;
+    border-radius: 30%/100%;
+    border-color: #ffffff;
+    background-color: #d4f6d3;
+    text-indent: 0;
+}
+
+.customizeInput
+{
+    width: 50%;
+    height: 9%;
+    font-size: 100%;
+    font-family: monospace;
+    border-radius: 20%/100%;
+    border: none;
+}
+
+/*index.php*/
+#logo
+{
+    width: 100%;
+    height: 50%;
+}
+
+#logo img
+{
+    width: 65%;
+    height: 75%;
+    margin-left: 18%;
+    margin-top: 8%;
+}
+
+#loginsContainer
+{
+    width: 100%;
+    height: 50%;
+}
+
+#loginsContainer a
+{
+    margin-left: 25%;
+    /*make this not blue*/
+}
+
+#loginsContainer p
+{
+    margin-left: 12%;
+}
+
+.loginInput
+{
+    margin-left: 12%;
+    width: 75%;
+    height: 15%;
+    font-size: 100%;
+    font-family: monospace;
+    margin-top: 5%
+}
+
+.loginButton
+{
+    margin-left: 30%;
+    width: 40%;
+    height: 17%;
+}
+
+/*signup.php*/
+.signinInput
+{
+    margin-left: 18%;
+    margin-top: 8%;
+    width: 70%;
+    height: 15%;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.signinButton
+{
+    width: 46%;
+    margin-left: 28%;
+}
+
+#signupContainer
+{
+    height: 45%;
+}
+
+#signupContainer p
+{
+    width: 50%;
+    margin-left: 18%;
+    font-family: monospace;
+}
+
+/*home.php*/
+#header
+{
+    width: 100%;
+    height: 10%;
+    background-color: #e6f3ff;
+}
+
+#body
+{
+    width: 100%;
+    height: 90%;
+    font-size: 100%;
+}
+
+#mainButtonContainer
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#userGroupContainer
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#bubbleContainer
+{
+    margin-top: 3%;
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    margin-left: 40%;
+}
+
+#bubble1
+{
+    border-radius: 100%;
+    border: 5px solid #fff;
+    height: 70%;
+    width: 30%;
+    float: left;
+    background-color: #fff;
+}
+
+#bubble2
+{
+    border-radius: 100%;
+    border: 5px solid #fff;
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+.homeButton
+{
+    margin-top: 13%;
+    margin-left: 25%;
+    color: #2a2929;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.homeProfile
+{
+    height: 90%;
+    border-radius: 100%;
+    margin-top: .5%;
+    margin-left: 41.5%;
+}
+
+/*createGroup.php*/
+
+#cgForm
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 300%;
+}
+
+#map
+{
+    position: absolute;
+    display: none;
+    width: 68%;
+    height: 55%;
+    margin-left: 26%;
+    /*background-color: red;*/
+    animation-name: appearFromNowhere;
+    animation-duration: 2s;
+}
+
+@keyframes appearFromNowhere
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.cgContainer
+{
+    font-size: 100%;
+}
+
+.cgContent
+{
+    margin-left: 25%;
+    margin-top: 10%;
+    font-family: monospace;
+    font-size: 100%;
+    text-indent: none;
+}
+
+.cgInput
+{
+    margin-left: 25%;
+    margin-top: 6%;
+    font-size: 100%;
+}
+
+.dateInput
+{
+    width: 44%;
+    font-size: 100%;
+    text-indent: 0;
+}
+
+.timeInput
+{
+    width: 32%;
+    height: 6%;
+    font-size: 100%;
+    text-indent: 0;
+}
+
+.classInput
+{
+    width: 30%
+}
+
+.capacityInput
+{
+    width: 30%;
+    text-indent: 18px;
+}
+
+.locationInput
+{
+    width: 70%
+}
+
+.cgButton
+{
+    height: 8%;
+    width: 32%;
+    margin-left: 37%;
+    margin-top: 2.5%;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+/*joinGroup.php*/
+#jgHeader
+{
+    width: 100%;
+    height: 10%;
+    background-color: #e6f3ff;
+}
+
+.searchIcon
+{
+    width: 12%;
+    height: 65%;
+    margin-top: 2%;
+    margin-left: 3%;
+    float: left;
+}
+
+.jgInput
+{
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 80%;
+    height: 80%;
+    font-size: 100%;
+}
+
+.jgButton
+{
+    height: 70%;
+    font-size: 100%;
+    font-family: monospace;
+    margin-left: 25%;
+    margin-top: 2.5%;
+}
+
+#searchResults
+{
+    height: 80%;
+    overflow: scroll;
+}
+
+#jgFooter
+{
+    width: 100%;
+    height: 10%;
+    background-color: #e6f3ff;
+}
+
+.group
+{
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    background-color: #e1fbff;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.liOuter
+{
+    display: inline-block;
+    height: 100%;
+    width: 75%;
+}
+
+.lInner
+{
+    padding-top: 4%;
+    width: 100%;
+    height: 43.5%;
+    overflow: hidden;
+}
+
+.liContainer
+{
+    width: 100%;
+    height: 100%;
+}
+
+.liContainer li
+{
+    list-style-type: none;
+    float: left;
+    padding-left: 6%;
+}
+
+.capacity 
+{
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+/*profile.php*/
+#profilePicContainer
+{
+   width: 100%;
+   height: 40%;
+}
+
+#profilePicContainer img
+{
+    height: 80%;
+    border-radius: 100%;
+    margin-left: 23%;
+}
+
+#profilePicContainer input[type=button]
+{
+    width: 21%;
+    height: 14%;
+    float: right;
+}
+
+#profileInfoContainer
+{
+    margin-top: 10%;
+    width: 100%;
+    height: 60%;
+}
+
+.pInput
+{
+    margin-top: 1%;
+    height: 30%;
+}
+
+.picButton
+{
+    width: 21.5%;
+    height: 57.5%;
+    float: right;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.pButton
+{
+    width: 21.5%;
+    height: 57.5%;
+    float: right;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.pBackButton
+{
+    margin-left: 35%;
+    width: 30%;
+    height: 11.5%;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.pCancel
+{
+    display: none;
+    width: 21.5%;
+    height: 57.5%;
+    float: right;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.profileInfoClass
+{
+    margin-left: 5%;
+    height: 15%;
+}
+
+.profileInfoClass label
+{
+    margin-top: 1%;
+}
+
+.pForm
+{
+    display: none;
+}
+
+.profilePicForm
+{
+    height: 15%;
+}
+
+#pFile
+{
+    height: 40%;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+.greatDeleteButton
+{
+    margin-left: 31%;
+    float: none;
+    height: 12%;
+    width: 40%;
+    background-color: #d46c6c;
+}
+
+#profileModalContainer
+{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	opacity: .7;
+}
+
+#deleteModal
+{
+	background-color: #e6f3ff;
+	height: 50%;
+}
+
+#messageContainer
+{
+	height: 80%;
+}
+
+/*feedback.php*/
+	
+#feedback
+	{
+		width: 90%;
+		height: 55%;
+		border-radius: 15px;
+		border: none;
+		font-size: 100%;
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+	
+	.fbButton
+	{
+		margin-left: 25%;
+		height: 0%;
+		font-size: 100%;
+		font-family: monospace;
+	}
